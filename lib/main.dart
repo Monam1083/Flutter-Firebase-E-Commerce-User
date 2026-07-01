@@ -23,10 +23,13 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: Consumer<ThemeProvider>(
-        builder: (context, ThemeProvider, child) {
+        builder: (context, themeProvider, child) {
           return MaterialApp(
             title: 'ShopSmart ',
-            theme: Style.themeData(isDarkTheme: false, context: context),
+            theme: Style.themeData(
+              isDarkTheme: themeProvider.getisDarktheme,
+              context: context,
+            ),
             home: const HomeScreen(),
           );
         },
