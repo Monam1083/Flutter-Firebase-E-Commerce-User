@@ -22,10 +22,14 @@ class MyApp extends StatelessWidget {
           },
         ),
       ],
-      child: MaterialApp(
-        title: 'ShopSmart ',
-        theme: Style.themeData(isDarkTheme: false, context: context),
-        home: const HomeScreen(),
+      child: Consumer<ThemeProvider>(
+        builder: (context, ThemeProvider, child) {
+          return MaterialApp(
+            title: 'ShopSmart ',
+            theme: Style.themeData(isDarkTheme: false, context: context),
+            home: const HomeScreen(),
+          );
+        },
       ),
     );
   }
