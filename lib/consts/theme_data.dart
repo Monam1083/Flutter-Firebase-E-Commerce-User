@@ -13,6 +13,7 @@ class Style {
       cardColor: isDarkTheme
           ? const Color.fromARGB(255, 13, 6, 37)
           : AppColor.lightcardcolor,
+      brightness: isDarkTheme ? Brightness.dark : Brightness.light,
     );
   }
 }
