@@ -44,7 +44,7 @@ lib/
 ├── screens/          # App screens (auth, home, cart, checkout, profile, etc.)
 ├── widgets/          # Reusable UI components
 ├── services/          # Firebase service classes (auth, firestore, storage)
-└── main.dart         # App entry point
+└── main.dart         
 ```
 
 ---
