@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_user_application/Provider/theme_provider.dart';
+import 'package:shop_user_application/widgets/subtitle_text.dart';
 //import 'package:shop_user_application/consts/app_color.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -13,10 +14,7 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            "Hello world",
-            style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),
-          ),
+          SubtitleTextWidget(label: "hello"),
           ElevatedButton(onPressed: () {}, child: Text("Hello world")),
           SwitchListTile(
             title: Text(
