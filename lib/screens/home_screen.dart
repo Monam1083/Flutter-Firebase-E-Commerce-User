@@ -14,7 +14,14 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SubtitleTextWidget(label: "hello"),
+          SubtitleTextWidget(
+            label: "hello",
+            fontsize: 20,
+            fontWeight: FontWeight.bold,
+            fontStyle: FontStyle.normal,
+            color: Colors.amber,
+            textDecoration: TextDecoration.none,
+          ),
           ElevatedButton(onPressed: () {}, child: Text("Hello world")),
           SwitchListTile(
             title: Text(
