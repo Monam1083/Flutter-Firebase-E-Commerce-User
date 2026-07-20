@@ -12,7 +12,7 @@ class RootScreen extends StatefulWidget {
 }
 
 class _RootScreenState extends State<RootScreen> {
-  late List screen;
+  late List<Widget> screen;
   int currentscreen = 0;
   late PageController controller;
   @override
@@ -25,9 +25,7 @@ class _RootScreenState extends State<RootScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageView(controller: controller, children: [    
-             ],
-      ),
+      body: PageView(controller: controller, children: screen),
     );
   }
 }
