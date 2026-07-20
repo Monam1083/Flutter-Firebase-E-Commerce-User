@@ -89,11 +89,6 @@ lib/
 Currently configured and tested for **Android** (portrait mode only). iOS configuration is not included.
 
 ---
-
-## 🔗 Related
-
-- [Admin App](#) — Companion app for managing products, orders, and inventory
-
 ---
 
 ## 📄 License
