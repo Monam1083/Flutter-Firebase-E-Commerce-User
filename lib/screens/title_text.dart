@@ -14,6 +14,15 @@ class TitleText extends StatelessWidget {
   final int? maxlines;
   @override
   Widget build(BuildContext context) {
-    return Text("");
+    return Text(
+      label,
+      maxLines: maxlines,
+      style: TextStyle(
+        color: color,
+        fontSize: fontsize,
+        fontWeight: FontWeight.bold,
+        overflow: TextOverflow.ellipsis,
+      ),
+    );
   }
 }
