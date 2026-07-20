@@ -45,6 +45,11 @@ class _RootScreenState extends State<RootScreen> {
             icon: Icon(IconlyLight.search),
             label: "Search",
           ),
+          NavigationDestination(
+            selectedIcon: Icon(IconlyBold.bag2),
+            icon: Icon(IconlyLight.bag2),
+            label: "cart",
+          ),
         ],
       ),
     );
