@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:shop_user_application/screens/cart_screen.dart';
 import 'package:shop_user_application/screens/home_screen.dart';
 import 'package:shop_user_application/screens/profile_screen.dart';
@@ -26,6 +27,17 @@ class _RootScreenState extends State<RootScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView(controller: controller, children: screen),
+      bottomNavigationBar: NavigationBar(
+        onDestinationSelected: (index) {
+          setState(() {
+            currentscreen = index;
+          });
+          controller.jumpToPage(currentscreen);
+        },
+        destinations: [
+          NavigationDestination(icon: Icon(IconlyLight.home), label: "home"),
+        ],
+      ),
     );
   }
 }
