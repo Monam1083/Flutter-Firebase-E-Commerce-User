@@ -2,7 +2,7 @@
 
 A fully functional cross-platform e-commerce shopping app built with **Flutter** and **Firebase**. Users can browse products, manage their cart, check out, track orders, and manage their profile — all backed by a real-time Firestore database.
 
-This is the **user-facing app**; it pairs with a companion [Admin App](#) for managing products, orders, and inventory.
+This is the **user-facing app**; it pairs with a companion  for managing products  orders  and inventory.
 
 ---
 
