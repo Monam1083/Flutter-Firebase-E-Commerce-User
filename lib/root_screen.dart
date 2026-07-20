@@ -13,18 +13,21 @@ class RootScreen extends StatefulWidget {
 
 class _RootScreenState extends State<RootScreen> {
   late List screen;
-
+  int currentscreen = 0;
+  late PageController controller;
   @override
   void initState() {
     super.initState();
     screen = [HomeScreen(), SearchScreen(), CartScreen(), ProfileScreen()];
+    controller = PageController(initialPage: currentscreen);
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: PageView(children: [
-         
+    return Scaffold(
+      body: PageView(controller: controller, children: [    
              ],
-      ));
+      ),
+    );
   }
 }
