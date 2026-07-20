@@ -40,6 +40,11 @@ class _RootScreenState extends State<RootScreen> {
             icon: Icon(IconlyLight.home),
             label: "home",
           ),
+          NavigationDestination(
+            selectedIcon: Icon(IconlyBold.search),
+            icon: Icon(IconlyLight.search),
+            label: "Search",
+          ),
         ],
       ),
     );
