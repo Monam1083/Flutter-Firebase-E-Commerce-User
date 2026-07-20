@@ -35,7 +35,11 @@ class _RootScreenState extends State<RootScreen> {
           controller.jumpToPage(currentscreen);
         },
         destinations: [
-          NavigationDestination(icon: Icon(IconlyLight.home), label: "home"),
+          NavigationDestination(
+            selectedIcon: Icon(IconlyBold.home),
+            icon: Icon(IconlyLight.home),
+            label: "home",
+          ),
         ],
       ),
     );
