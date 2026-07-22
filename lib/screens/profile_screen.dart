@@ -8,7 +8,10 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Image.asset("assets\images\bag\shopping_cart.png"),
+        leading: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Image.asset("assets\images\bag\shopping_cart.png"),
+        ),
         title: Text("Profile Screen"),
       ),
       body: Center(
