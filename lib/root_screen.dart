@@ -26,7 +26,11 @@ class _RootScreenState extends State<RootScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageView(controller: controller, children: screen),
+      body: PageView(
+        physics: NeverScrollableScrollPhysics(),
+        controller: controller,
+        children: screen,
+      ),
       bottomNavigationBar: NavigationBar(
         onDestinationSelected: (index) {
           setState(() {
