@@ -7,6 +7,10 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: Image.asset("assets\images\bag\shopping_cart.png"),
+        title: Text("Profile Screen"),
+      ),
       body: Center(
         child: TitleText(
           label: "Profile Screen",
