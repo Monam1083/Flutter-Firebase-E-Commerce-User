@@ -32,6 +32,7 @@ class _RootScreenState extends State<RootScreen> {
         children: screen,
       ),
       bottomNavigationBar: NavigationBar(
+        selectedIndex: currentscreen,
         onDestinationSelected: (index) {
           setState(() {
             currentscreen = index;
