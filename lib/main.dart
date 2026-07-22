@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:shop_user_application/Provider/theme_provider.dart';
 import 'package:shop_user_application/consts/theme_data.dart';
 import 'package:shop_user_application/root_screen.dart';
-import 'package:shop_user_application/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
