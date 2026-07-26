@@ -38,7 +38,9 @@ class ProfileScreen extends StatelessWidget {
                   color: Theme.of(context).cardColor,
                   border: Border.all(
                     color: Theme.of(context).colorScheme.surface,
+                    width: 3,
                   ),
+                  image: DecorationImage(image: NetworkImage("url")),
                 ),
               ),
             ],
