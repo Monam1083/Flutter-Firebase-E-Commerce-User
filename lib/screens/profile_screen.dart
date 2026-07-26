@@ -81,20 +81,25 @@ class ProfileScreen extends StatelessWidget {
             padding: EdgeInsetsGeometry.all(8),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text("General"),
-                SizedBox(height: 10),
-                ListTile(
-                  onTap: () {},
-                  title: Text("All order"),
-                  leading: Image.asset("address"),
-                  trailing: Icon(IconlyLight.arrowRight),
-                ),
-              ],
+              children: [Text("General"), SizedBox(height: 10)],
             ),
           ),
         ],
       ),
+    );
+  }
+}
+
+class CustomWidget extends StatelessWidget {
+  const CustomWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      onTap: () {},
+      title: Text("All order"),
+      leading: Image.asset("address"),
+      trailing: Icon(IconlyLight.arrowRight),
     );
   }
 }
