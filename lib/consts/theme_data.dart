@@ -19,6 +19,9 @@ class Style {
             ? AppColor.darkscafoldcolor
             : AppColor.lightscafoldcolor,
         elevation: 0,
+        titleTextStyle: TextStyle(
+          color: isDarkTheme ? Colors.white : Colors.black,
+        ),
       ),
     );
   }
