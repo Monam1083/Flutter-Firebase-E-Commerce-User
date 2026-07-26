@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shopsmart_users_en/providers/theme_provider.dart';
-import 'package:shopsmart_users_en/root_screen.dart';
+import 'package:shop_user_application/Provider/theme_provider.dart';
+import 'package:shop_user_application/root_screen.dart';
 
 import 'consts/theme_data.dart';
 import 'screens/home_screen.dart';
