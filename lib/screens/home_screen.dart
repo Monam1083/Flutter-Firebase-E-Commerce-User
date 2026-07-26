@@ -1,8 +1,14 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:provider/provider.dart';
-import 'package:shop_user_application/Provider/theme_provider.dart';
-import 'package:shop_user_application/widgets/subtitle_text.dart';
-//import 'package:shop_user_application/consts/app_color.dart';
+import 'package:shopsmart_users_en/consts/app_colors.dart';
+import 'package:shopsmart_users_en/providers/theme_provider.dart';
+
+import '../widgets/subtitle_text.dart';
+import '../widgets/title_text.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,28 +17,24 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final themeProvider = Provider.of<ThemeProvider>(context);
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SubtitleTextWidget(
-            label: "hello",
-            fontsize: 20,
-            fontWeight: FontWeight.bold,
-            fontStyle: FontStyle.normal,
-            color: Colors.amber,
-            textDecoration: TextDecoration.none,
-          ),
-          ElevatedButton(onPressed: () {}, child: Text("Hello world")),
-          SwitchListTile(
-            title: Text(
-              themeProvider.getisDarktheme ? "Dark Mode" : "Light Mode",
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const SubtitleTextWidget(label: "Hello world!!!!!"),
+            TitlesTextWidget(label: "Hello this is a title" * 10),
+            ElevatedButton(onPressed: () {}, child: const Text("Hello world")),
+            SwitchListTile(
+              title: Text(
+                themeProvider.getIsDarkTheme ? "Dark Mode" : "Light Mode",
+              ),
+              value: themeProvider.getIsDarkTheme,
+              onChanged: (value) {
+                themeProvider.setDarkTheme(themeValue: value);
+              },
             ),
-            value: themeProvider.getisDarktheme,
-            onChanged: (value) {
-              themeProvider.setDarkTheme(value);
-            },
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
