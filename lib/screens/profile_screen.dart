@@ -14,13 +14,18 @@ class ProfileScreen extends StatelessWidget {
         ),
         title: Text("Profile Screen"),
       ),
-      body: Center(
-        child: TitleText(
-          label: "Profile Screen",
-          fontsize: 10,
-          color: Colors.amber,
-          maxlines: 1,
-        ),
+      body: Column(
+        children: [
+          Padding(
+            padding: EdgeInsetsGeometry.all(10),
+            child: TitleText(
+              label: "Please login to have unlimited access",
+              fontsize: 10,
+              color: Colors.black,
+              maxlines: 1,
+            ),
+          ),
+        ],
       ),
     );
   }
