@@ -16,8 +16,7 @@ class AssetsManager {
   static String successful = "$imagesPath/successful.png";
 
   // Profile
-  static String address =
-      "shop_user_application\assets\images\profile\address.png";
+  static String address = "$profileImagesPath/address.png";
   static String login = "$profileImagesPath/login.png";
   static String logout = "$profileImagesPath/logout.png";
   static String privacy = "$profileImagesPath/privacy.png";
