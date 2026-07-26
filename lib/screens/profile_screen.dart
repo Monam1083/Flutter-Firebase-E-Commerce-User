@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_user_application/Provider/theme_provider.dart';
 import 'package:shop_user_application/services/assets_manager.dart';
+import 'package:shop_user_application/widgets/subtitle_text.dart';
 import '../widgets/title_text.dart';
 
 class ProfileScreen extends StatelessWidget {
