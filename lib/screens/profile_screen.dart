@@ -1,3 +1,5 @@
+import 'dart:ui_web';
+
 import 'package:flutter/material.dart';
 import 'package:shop_user_application/widgets/subtitle_text.dart';
 import 'package:shop_user_application/widgets/title_text.dart';
@@ -76,7 +78,16 @@ class ProfileScreen extends StatelessWidget {
           SizedBox(height: 14),
           Padding(
             padding: EdgeInsetsGeometry.all(8),
-            child: Column(children: [Text("General")]),
+            child: Column(
+              children: [
+                Text("General"),
+                ListTile(
+                  onTap: () {},
+                  title: Text("All order"),
+                  leading: Image.asset(AssetManager.address, height: 30),
+                ),
+              ],
+            ),
           ),
         ],
       ),
