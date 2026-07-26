@@ -91,12 +91,20 @@ class ProfileScreen extends StatelessWidget {
 }
 
 class CustomWidget extends StatelessWidget {
-  const CustomWidget({super.key});
-
+  const CustomWidget({
+    super.key,
+    required this.imagepath,
+    required this.text,
+    required this.function,
+  });
+  final String imagepath, text;
+  final Function function;
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      onTap: () {},
+      onTap: () {
+        function();
+      },
       title: Text("All order"),
       leading: Image.asset("address"),
       trailing: Icon(IconlyLight.arrowRight),
