@@ -28,6 +28,15 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
           ),
+          Row(
+            children: [
+              Container(
+                width: 60,
+                height: 60,
+                decoration: BoxDecoration(shape: BoxShape.circle),
+              ),
+            ],
+          ),
         ],
       ),
     );
