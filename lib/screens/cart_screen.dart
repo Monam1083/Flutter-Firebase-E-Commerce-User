@@ -8,12 +8,7 @@ class CartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: TitleText(
-          label: "Cart Screen",
-          fontsize: 10,
-          color: Colors.amber,
-          maxlines: 1,
-        ),
+        child: TitlesTextWidget(label: "Cart Screen", color: Colors.amber),
       ),
     );
   }
