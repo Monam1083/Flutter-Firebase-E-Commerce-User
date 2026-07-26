@@ -1,25 +1,27 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
-class TitleText extends StatelessWidget {
-  const TitleText({
-    super.key,
+class TitlesTextWidget extends StatelessWidget {
+  const TitlesTextWidget({
+    Key? key,
     required this.label,
-    required this.fontsize,
-    required this.color,
-    required this.maxlines,
-  });
+    this.fontSize = 20,
+    this.color,
+    this.maxLines,
+  }) : super(key: key);
+
   final String label;
-  final double fontsize;
+  final double fontSize;
   final Color? color;
-  final int? maxlines;
+  final int? maxLines;
   @override
   Widget build(BuildContext context) {
     return Text(
       label,
-      maxLines: maxlines,
+      maxLines: maxLines,
+      // textAlign: TextAlign.justify,
       style: TextStyle(
         color: color,
-        fontSize: fontsize,
+        fontSize: fontSize,
         fontWeight: FontWeight.bold,
         overflow: TextOverflow.ellipsis,
       ),
