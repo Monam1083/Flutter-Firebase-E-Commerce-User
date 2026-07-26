@@ -1,6 +1,7 @@
 import 'dart:ui_web';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:shop_user_application/widgets/subtitle_text.dart';
 import 'package:shop_user_application/widgets/title_text.dart';
 
@@ -84,7 +85,8 @@ class ProfileScreen extends StatelessWidget {
                 ListTile(
                   onTap: () {},
                   title: Text("All order"),
-                  leading: Image.asset(AssetManager.address, height: 30),
+                  leading: Image.asset("address"),
+                  trailing: Icon(IconlyLight.arrowRight),
                 ),
               ],
             ),

@@ -22,7 +22,7 @@ class AssetsManager {
   static String privacy = "$profileImagesPath/privacy.png";
   static String recent = "$profileImagesPath/recent.png";
   static String theme = "$profileImagesPath/theme.png";
-  // Bag
+  // Bags
   static String bagWish = "$bagImagesPath/bag_wish.png";
   static String shoppingBasket = "$bagImagesPath/shopping_basket.png";
   static String shoppingCart = "$bagImagesPath/shopping_cart.png";
