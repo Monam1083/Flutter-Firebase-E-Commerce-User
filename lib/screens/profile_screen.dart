@@ -29,45 +29,48 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8),
-            child: Row(
-              children: [
-                Container(
-                  width: 60,
-                  height: 60,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Theme.of(context).cardColor,
-                    border: Border.all(
-                      color: Theme.of(context).colorScheme.surface,
-                      width: 3,
+          Visibility(
+            visible: true,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: Row(
+                children: [
+                  Container(
+                    width: 60,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Theme.of(context).cardColor,
+                      border: Border.all(
+                        color: Theme.of(context).colorScheme.surface,
+                        width: 3,
+                      ),
+                      image: DecorationImage(image: NetworkImage("url")),
                     ),
-                    image: DecorationImage(image: NetworkImage("url")),
                   ),
-                ),
-                SizedBox(width: 10),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    TitleText(
-                      label: "Monam Majeed",
-                      fontsize: 10,
-                      color: Colors.black,
-                      maxlines: 1,
-                    ),
-                    SizedBox(width: 10),
-                    SubtitleTextWidget(
-                      label: "Monammajeed@gmail.com",
-                      fontsize: 7,
-                      fontStyle: FontStyle.normal,
-                      fontWeight: FontWeight.normal,
-                      color: Colors.black,
-                      textDecoration: TextDecoration.none,
-                    ),
-                  ],
-                ),
-              ],
+                  SizedBox(width: 10),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      TitleText(
+                        label: "Monam Majeed",
+                        fontsize: 10,
+                        color: Colors.black,
+                        maxlines: 1,
+                      ),
+                      SizedBox(width: 10),
+                      SubtitleTextWidget(
+                        label: "Monammajeed@gmail.com",
+                        fontsize: 7,
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.black,
+                        textDecoration: TextDecoration.none,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ],
