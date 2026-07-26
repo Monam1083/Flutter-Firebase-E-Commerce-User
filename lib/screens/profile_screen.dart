@@ -33,7 +33,13 @@ class ProfileScreen extends StatelessWidget {
               Container(
                 width: 60,
                 height: 60,
-                decoration: BoxDecoration(shape: BoxShape.circle),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Theme.of(context).cardColor,
+                  border: Border.all(
+                    color: Theme.of(context).colorScheme.surface,
+                  ),
+                ),
               ),
             ],
           ),
