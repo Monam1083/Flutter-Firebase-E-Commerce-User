@@ -43,6 +43,17 @@ class ProfileScreen extends StatelessWidget {
                   image: DecorationImage(image: NetworkImage("url")),
                 ),
               ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  TitleText(
+                    label: "Monam Majeed",
+                    fontsize: 10,
+                    color: Colors.black,
+                    maxlines: 1,
+                  ),
+                ],
+              ),
             ],
           ),
         ],
