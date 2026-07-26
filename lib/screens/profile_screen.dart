@@ -16,13 +16,16 @@ class ProfileScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Padding(
-            padding: EdgeInsetsGeometry.all(10),
-            child: TitleText(
-              label: "Please login to have unlimited access",
-              fontsize: 10,
-              color: Colors.black,
-              maxlines: 1,
+          Visibility(
+            visible: false,
+            child: Padding(
+              padding: EdgeInsetsGeometry.all(10),
+              child: TitleText(
+                label: "Please login to have unlimited access",
+                fontsize: 10,
+                color: Colors.black,
+                maxlines: 1,
+              ),
             ),
           ),
         ],
