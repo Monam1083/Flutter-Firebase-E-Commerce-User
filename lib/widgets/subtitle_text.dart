@@ -10,7 +10,6 @@ class SubtitleTextWidget extends StatelessWidget {
     this.color,
     this.textDecoration = TextDecoration.none,
   });
-
   final String label;
   final double fontSize;
   final FontStyle fontStyle;
