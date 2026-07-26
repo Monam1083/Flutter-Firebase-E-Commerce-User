@@ -74,7 +74,10 @@ class ProfileScreen extends StatelessWidget {
             ),
           ),
           SizedBox(height: 14),
-          Padding(padding: EdgeInsetsGeometry.all(8)),
+          Padding(
+            padding: EdgeInsetsGeometry.all(8),
+            child: Column(children: [Text("General")]),
+          ),
         ],
       ),
     );
