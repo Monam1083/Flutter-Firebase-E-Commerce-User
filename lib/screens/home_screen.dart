@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:provider/provider.dart';
+import 'package:shop_user_application/Provider/theme_provider.dart';
 import 'package:shopsmart_users_en/consts/app_colors.dart';
 import 'package:shopsmart_users_en/providers/theme_provider.dart';
 
