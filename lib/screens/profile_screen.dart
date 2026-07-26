@@ -1,3 +1,4 @@
+import 'dart:ffi';
 import 'dart:ui_web';
 
 import 'package:flutter/material.dart';
@@ -81,7 +82,15 @@ class ProfileScreen extends StatelessWidget {
             padding: EdgeInsetsGeometry.all(8),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [Text("General"), SizedBox(height: 10)],
+              children: [
+                Text("General"),
+                SizedBox(height: 10),
+                CustomWidget(
+                  imagepath: AssetManager.address,
+                  text: "All Order",
+                  function: () {},
+                ),
+              ],
             ),
           ),
         ],
