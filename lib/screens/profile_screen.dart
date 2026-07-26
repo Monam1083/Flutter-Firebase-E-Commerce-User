@@ -80,8 +80,10 @@ class ProfileScreen extends StatelessWidget {
           Padding(
             padding: EdgeInsetsGeometry.all(8),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("General"),
+                SizedBox(height: 10),
                 ListTile(
                   onTap: () {},
                   title: Text("All order"),
