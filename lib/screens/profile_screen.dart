@@ -105,8 +105,8 @@ class CustomWidget extends StatelessWidget {
       onTap: () {
         function();
       },
-      title: Text("All order"),
-      leading: Image.asset("address"),
+      title: Text(text),
+      leading: Image.asset(imagepath),
       trailing: Icon(IconlyLight.arrowRight),
     );
   }
