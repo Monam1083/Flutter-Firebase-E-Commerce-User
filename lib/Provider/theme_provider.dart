@@ -1,26 +1,25 @@
-import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class ThemeProvider extends ChangeNotifier {
+class ThemeProvider with ChangeNotifier {
   static const THEME_STATUS = "THEME_STATUS";
-  bool _darktheme = false;
-  bool get getisDarktheme => _darktheme;
+  bool _darkTheme = false;
+  bool get getIsDarkTheme => _darkTheme;
 
   ThemeProvider() {
     getTheme();
   }
-
-  Future<void> setDarkTheme(bool value) async {
+  setDarkTheme({required bool themeValue}) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setBool(THEME_STATUS, value);
-    _darktheme = value;
+    prefs.setBool(THEME_STATUS, themeValue);
+    _darkTheme = themeValue;
     notifyListeners();
   }
 
   Future<bool> getTheme() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    _darktheme = prefs.getBool(THEME_STATUS) ?? false;
+    _darkTheme = prefs.getBool(THEME_STATUS) ?? false;
     notifyListeners();
-    return _darktheme;
+    return _darkTheme;
   }
 }
