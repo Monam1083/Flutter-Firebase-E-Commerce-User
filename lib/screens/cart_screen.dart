@@ -22,6 +22,10 @@ class CartScreen extends StatelessWidget {
             label: "your cart is empty",
             fontWeight: FontWeight.w600,
           ),
+          SubtitleTextWidget(
+            label: "looks like your cart is empty add something ",
+            fontWeight: FontWeight.w600,
+          ),
         ],
       ),
     );
