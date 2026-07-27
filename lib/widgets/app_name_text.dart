@@ -8,6 +8,7 @@ class AppNameTextWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Shimmer.fromColors(
+      period: Duration(seconds: 12),
       baseColor: Colors.purple,
       highlightColor: Colors.red,
       child: TitlesTextWidget(label: "Shop Smart", fontSize: 25),
