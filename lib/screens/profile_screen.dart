@@ -3,6 +3,7 @@ import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_user_application/Provider/theme_provider.dart';
 import 'package:shop_user_application/services/assets_manager.dart';
+import 'package:shop_user_application/widgets/app_name_text.dart';
 import 'package:shop_user_application/widgets/subtitle_text.dart';
 import '../widgets/title_text.dart';
 
@@ -18,7 +19,7 @@ class ProfileScreen extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Image.asset(AssetsManager.shoppingCart),
         ),
-        title: const Text("Profile screen"),
+        title: AppNameTextWidget(),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
