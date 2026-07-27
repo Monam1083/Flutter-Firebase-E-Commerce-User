@@ -17,7 +17,7 @@ class CartScreen extends StatelessWidget {
             width: double.infinity,
             height: size.height * 0.35,
           ),
-          TitlesTextWidget(label: "Woops"),
+          TitlesTextWidget(label: "Woops", color: Colors.red, fontSize: 20),
         ],
       ),
     );
