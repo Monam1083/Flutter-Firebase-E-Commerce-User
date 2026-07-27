@@ -18,7 +18,10 @@ class CartScreen extends StatelessWidget {
           ),
           SizedBox(height: 20),
           TitlesTextWidget(label: "Woops", color: Colors.red, fontSize: 20),
-          SubtitleTextWidget(label: ""),
+          SubtitleTextWidget(
+            label: "your cart is empty",
+            fontWeight: FontWeight.w600,
+          ),
         ],
       ),
     );
