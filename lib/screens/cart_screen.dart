@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop_user_application/services/assets_manager.dart';
+import 'package:shop_user_application/widgets/subtitle_text.dart';
 import 'package:shop_user_application/widgets/title_text.dart';
 
 class CartScreen extends StatelessWidget {
@@ -17,6 +18,7 @@ class CartScreen extends StatelessWidget {
           ),
           SizedBox(height: 20),
           TitlesTextWidget(label: "Woops", color: Colors.red, fontSize: 20),
+          SubtitleTextWidget(label: ""),
         ],
       ),
     );
