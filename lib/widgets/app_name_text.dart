@@ -10,7 +10,7 @@ class AppNameTextWidget extends StatelessWidget {
     return Shimmer.fromColors(
       baseColor: Colors.purple,
       highlightColor: Colors.red,
-      child: TitlesTextWidget(label: "Shop Smart"),
+      child: TitlesTextWidget(label: "Shop Smart", fontSize: 25),
     );
   }
 }
