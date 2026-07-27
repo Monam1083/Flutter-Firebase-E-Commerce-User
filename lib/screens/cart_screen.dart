@@ -24,9 +24,12 @@ class CartScreen extends StatelessWidget {
             fontWeight: FontWeight.w600,
           ),
           SizedBox(height: 20),
-          SubtitleTextWidget(
-            label: "looks like your cart is empty add something ",
-            fontWeight: FontWeight.w400,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SubtitleTextWidget(
+              label: "looks like your cart is empty add something ",
+              fontWeight: FontWeight.w400,
+            ),
           ),
           SizedBox(height: 20),
         ],
