@@ -14,7 +14,7 @@ class CartScreen extends StatelessWidget {
           Image.asset(
             AssetsManager.shoppingBasket,
             width: double.infinity,
-            height: size.height * 0.3,
+            height: size.height * 0.35,
           ),
         ],
       ),
