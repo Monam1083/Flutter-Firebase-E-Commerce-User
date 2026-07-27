@@ -9,7 +9,11 @@ class CartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(children: [Image.asset(AssetsManager.shoppingBasket)]),
+      body: Column(
+        children: [
+          Image.asset(AssetsManager.shoppingBasket, width: double.infinity),
+        ],
+      ),
     );
   }
 }
