@@ -4,7 +4,12 @@ import 'package:shop_user_application/widgets/subtitle_text.dart';
 import 'package:shop_user_application/widgets/title_text.dart';
 
 class EmptyBagWidget extends StatelessWidget {
-  const EmptyBagWidget({super.key});
+  const EmptyBagWidget({
+    super.key,
+    required this.imagepath,
+    required this.title,
+    required this.subtitle,
+  });
   final String imagepath;
   final String title;
   final String subtitle;
