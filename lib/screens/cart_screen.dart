@@ -1,5 +1,3 @@
-import 'dart:ui_web';
-
 import 'package:flutter/material.dart';
 import 'package:shop_user_application/services/assets_manager.dart';
 import 'package:shop_user_application/widgets/empty_bag.dart';
