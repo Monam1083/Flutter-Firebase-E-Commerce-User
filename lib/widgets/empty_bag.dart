@@ -13,6 +13,7 @@ class EmptyBagWidget extends StatelessWidget {
   final String imagepath;
   final String title;
   final String subtitle;
+  final String buttontext;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
