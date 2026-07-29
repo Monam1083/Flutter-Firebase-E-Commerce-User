@@ -23,7 +23,7 @@ class EmptyBagWidget extends StatelessWidget {
       child: Column(
         children: [
           Image.asset(
-            AssetsManager.shoppingBasket,
+            imagepath,
             width: double.infinity,
             height: size.height * 0.35,
           ),
