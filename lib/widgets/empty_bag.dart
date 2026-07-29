@@ -7,6 +7,7 @@ class EmptyBagWidget extends StatelessWidget {
   const EmptyBagWidget({super.key});
   final String imagepath;
   final String title;
+  final String subtitle;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
