@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop_user_application/screens/cart/cart_widget.dart';
 import 'package:shop_user_application/services/assets_manager.dart';
 import 'package:shop_user_application/widgets/empty_bag.dart';
 
@@ -16,6 +17,12 @@ class CartScreen extends StatelessWidget {
               buttontext: "shop Now",
             ),
           )
-        : Scaffold();
+        : Scaffold(
+            body: ListView.builder(
+              itemBuilder: (context, index) {
+                return CartWidget();
+              },
+            ),
+          );
   }
 }
