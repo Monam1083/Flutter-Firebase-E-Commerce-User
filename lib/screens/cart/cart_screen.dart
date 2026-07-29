@@ -4,9 +4,10 @@ import 'package:shop_user_application/widgets/empty_bag.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
+  final bool isempty = false;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return isempty? Scaffold(
       body: EmptyBagWidget(
         imagepath: AssetsManager.shoppingBasket,
         title: "your cart is empty",
