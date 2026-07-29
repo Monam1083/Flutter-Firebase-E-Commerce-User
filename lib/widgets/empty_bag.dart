@@ -5,6 +5,7 @@ import 'package:shop_user_application/widgets/title_text.dart';
 
 class EmptyBagWidget extends StatelessWidget {
   const EmptyBagWidget({super.key});
+  final String imagepath;
 
   @override
   Widget build(BuildContext context) {
