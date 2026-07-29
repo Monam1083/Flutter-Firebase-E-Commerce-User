@@ -6,7 +6,7 @@ import 'package:shop_user_application/widgets/title_text.dart';
 class EmptyBagWidget extends StatelessWidget {
   const EmptyBagWidget({super.key});
   final String imagepath;
-
+  final String title;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
