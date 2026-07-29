@@ -30,10 +30,7 @@ class EmptyBagWidget extends StatelessWidget {
           SizedBox(height: 20),
           TitlesTextWidget(label: "Woops", color: Colors.red, fontSize: 20),
           SizedBox(height: 20),
-          SubtitleTextWidget(
-            label: "your cart is empty",
-            fontWeight: FontWeight.w600,
-          ),
+          SubtitleTextWidget(label: title, fontWeight: FontWeight.w600),
           SizedBox(height: 20),
           Padding(
             padding: const EdgeInsets.all(8.0),
