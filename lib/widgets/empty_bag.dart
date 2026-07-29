@@ -9,6 +9,7 @@ class EmptyBagWidget extends StatelessWidget {
     required this.imagepath,
     required this.title,
     required this.subtitle,
+    required this.buttontext,
   });
   final String imagepath;
   final String title;
