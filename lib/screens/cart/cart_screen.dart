@@ -7,13 +7,15 @@ class CartScreen extends StatelessWidget {
   final bool isempty = false;
   @override
   Widget build(BuildContext context) {
-    return isempty? Scaffold(
-      body: EmptyBagWidget(
-        imagepath: AssetsManager.shoppingBasket,
-        title: "your cart is empty",
-        subtitle: "Looks like your cart is empty try something to add",
-        buttontext: "shop Now",
-      ),
-    );
+    return isempty
+        ? Scaffold(
+            body: EmptyBagWidget(
+              imagepath: AssetsManager.shoppingBasket,
+              title: "your cart is empty",
+              subtitle: "Looks like your cart is empty try something to add",
+              buttontext: "shop Now",
+            ),
+          )
+        : Scaffold();
   }
 }
