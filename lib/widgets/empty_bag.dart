@@ -35,7 +35,7 @@ class EmptyBagWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: SubtitleTextWidget(
-              label: "looks like your cart is empty add something ",
+              label: subtitle,
               fontWeight: FontWeight.w400,
             ),
           ),
