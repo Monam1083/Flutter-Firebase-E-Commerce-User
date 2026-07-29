@@ -25,6 +25,12 @@ class CartScreen extends StatelessWidget {
                 child: Image.asset(AssetsManager.shoppingCart),
               ),
               title: TitlesTextWidget(label: "cart Screen"),
+              actions: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.delete_forever_rounded),
+                ),
+              ],
             ),
             body: ListView.builder(
               itemBuilder: (context, index) {
