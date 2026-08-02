@@ -4,7 +4,6 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:shopsmart_users_en/widgets/subtitle_text.dart';
-import 'package:shopsmart_users_en/widgets/title_text.dart';
 
 class CartWidget extends StatelessWidget {
   const CartWidget({super.key});
