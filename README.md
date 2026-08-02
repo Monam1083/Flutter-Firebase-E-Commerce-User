@@ -20,9 +20,7 @@ This is the **user-facing app**; it pairs with a companion  for managing product
 - 📱 **Responsive UI** — Optimized for portrait mode on Android
 
 ---
-
 ## 🛠️ Tech Stack
-
 | Category | Technology |
 |---|---|
 | Framework | Flutter (Dart) |
@@ -36,7 +34,6 @@ This is the **user-facing app**; it pairs with a companion  for managing product
 ---
 
 ## 📂 Project Structure
-
 ```
 lib/
 ├── models/          # Data models (Product, Order, User, Address, etc.)
@@ -48,7 +45,6 @@ lib/
 ```
 
 ---
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -64,12 +60,10 @@ lib/
    git clone https://github.com/Monam1083/flutter-firebase-ecommerce-user.git
    cd flutter-firebase-ecommerce-user
    ```
-
 2. **Install dependencies**
    ```bash
    flutter pub get
    ```
-
 3. **Configure Firebase**
    - Create a Firebase project at the [Firebase Console](https://console.firebase.google.com/)
    - Enable **Authentication** (Email/Password and Google Sign-In)
@@ -81,13 +75,10 @@ lib/
    ```bash
    flutter run
    ```
-
 ---
-
 ## 📱 Platform Support
 
 Currently configured and tested for **Android** (portrait mode only). iOS configuration is not included.
-
 ---
 ---
 
