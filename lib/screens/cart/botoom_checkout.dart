@@ -12,7 +12,7 @@ class CartBottomSheetWidget extends StatelessWidget {
         Column(
           children: [
             TitlesTextWidget(label: "Total"),
-            SubtitleTextWidget(label: "price"),
+            SubtitleTextWidget(label: "price", color: Colors.blue),
           ],
         ),
       ],
