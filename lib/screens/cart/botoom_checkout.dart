@@ -12,6 +12,7 @@ class CartBottomSheetWidget extends StatelessWidget {
       child: Row(
         children: [
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               TitlesTextWidget(label: "Total"),
               SubtitleTextWidget(label: "price", color: Colors.blue),
