@@ -6,6 +6,10 @@ class CartBottomSheetWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(children: [TitlesTextWidget(label: "Total")]);
+    return Row(
+      children: [
+        Column(children: [TitlesTextWidget(label: "Total")]),
+      ],
+    );
   }
 }
