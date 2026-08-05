@@ -8,6 +8,7 @@ class CartBottomSheetWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
+      height: kBottomNavigationBarHeight + 10,
       child: Row(
         children: [
           Column(
