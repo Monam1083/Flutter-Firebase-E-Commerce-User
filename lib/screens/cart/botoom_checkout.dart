@@ -12,6 +12,7 @@ class CartBottomSheetWidget extends StatelessWidget {
       child: SizedBox(
         height: kBottomNavigationBarHeight + 10,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
