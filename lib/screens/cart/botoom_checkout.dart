@@ -8,7 +8,10 @@ class CartBottomSheetWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(border: Border(top: BorderSide(width: 3))),
+      decoration: BoxDecoration(
+        color: Theme.of(context).scaffoldBackgroundColor,
+        border: Border(top: BorderSide(width: 3)),
+      ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: SizedBox(
