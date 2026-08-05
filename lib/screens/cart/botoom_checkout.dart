@@ -10,7 +10,7 @@ class CartBottomSheetWidget extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: Theme.of(context).scaffoldBackgroundColor,
-        border: Border(top: BorderSide(width: 3)),
+        border: Border(top: BorderSide(width: 3, color: Colors.grey)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
