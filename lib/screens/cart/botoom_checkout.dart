@@ -7,15 +7,17 @@ class CartBottomSheetWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Column(
-          children: [
-            TitlesTextWidget(label: "Total"),
-            SubtitleTextWidget(label: "price", color: Colors.blue),
-          ],
-        ),
-      ],
+    return SizedBox(
+      child: Row(
+        children: [
+          Column(
+            children: [
+              TitlesTextWidget(label: "Total"),
+              SubtitleTextWidget(label: "price", color: Colors.blue),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
