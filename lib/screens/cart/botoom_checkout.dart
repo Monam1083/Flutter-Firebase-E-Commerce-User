@@ -20,6 +20,7 @@ class CartBottomSheetWidget extends StatelessWidget {
                 SubtitleTextWidget(label: "price", color: Colors.blue),
               ],
             ),
+            ElevatedButton(onPressed: onPressed, child: child),
           ],
         ),
       ),
