@@ -7,22 +7,24 @@ class CartBottomSheetWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: SizedBox(
-        height: kBottomNavigationBarHeight + 10,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                TitlesTextWidget(label: "Total"),
-                SubtitleTextWidget(label: "price", color: Colors.blue),
-              ],
-            ),
-            ElevatedButton(onPressed: () {}, child: Text("Check out")),
-          ],
+    return Container(
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: SizedBox(
+          height: kBottomNavigationBarHeight + 10,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  TitlesTextWidget(label: "Total"),
+                  SubtitleTextWidget(label: "price", color: Colors.blue),
+                ],
+              ),
+              ElevatedButton(onPressed: () {}, child: Text("Check out")),
+            ],
+          ),
         ),
       ),
     );
