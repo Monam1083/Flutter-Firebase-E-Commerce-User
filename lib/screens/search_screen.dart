@@ -18,7 +18,10 @@ class SearchScreen extends StatelessWidget {
           ),
           title: TitlesTextWidget(label: "Search Product"),
         ),
-        body: Column(children: [TextField()]),
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(children: [TextField()]),
+        ),
       ),
     );
   }
