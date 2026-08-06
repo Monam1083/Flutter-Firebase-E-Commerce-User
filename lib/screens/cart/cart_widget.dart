@@ -63,7 +63,7 @@ class CartWidget extends StatelessWidget {
                         const Spacer(),
                         OutlinedButton.icon(
                           onPressed: () async {
-                            await 
+                            await showModalBottomSheet(context: context, builder: builder)
                           },
                           icon: const Icon(IconlyLight.arrowDown2),
                           label: const Text("Qty: 6"),
