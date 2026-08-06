@@ -9,7 +9,7 @@ class QuantityBtmSheetWidget extends StatelessWidget {
     return ListView.builder(
       itemCount: 25,
       itemBuilder: (context, index) {
-        return SubtitleTextWidget(label: index.toString());
+        return Center(child: SubtitleTextWidget(label: index.toString()));
       },
     );
   }
