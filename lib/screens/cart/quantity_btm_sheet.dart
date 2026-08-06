@@ -26,10 +26,11 @@ class QuantityBtmSheetWidget extends StatelessWidget {
               itemCount: 25,
               itemBuilder: (context, index) {
                 return InkWell(
+                  onTap: () {},
                   child: Center(
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: SubtitleTextWidget(label: index.toString()),
+                      child: SubtitleTextWidget(label: " ${index + 1}"),
                     ),
                   ),
                 );
