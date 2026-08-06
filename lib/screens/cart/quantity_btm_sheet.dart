@@ -6,24 +6,22 @@ class QuantityBtmSheetWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          ListView.builder(
-            physics: NeverScrollableScrollPhysics(),
-            shrinkWrap: true,
-            itemCount: 25,
-            itemBuilder: (context, index) {
-              return Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: SubtitleTextWidget(label: index.toString()),
-                ),
-              );
-            },
-          ),
-        ],
-      ),
+    return Column(
+      children: [
+        ListView.builder(
+          physics: NeverScrollableScrollPhysics(),
+          shrinkWrap: true,
+          itemCount: 25,
+          itemBuilder: (context, index) {
+            return Center(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: SubtitleTextWidget(label: index.toString()),
+              ),
+            );
+          },
+        ),
+      ],
     );
   }
 }
