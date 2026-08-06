@@ -8,7 +8,7 @@ class QuantityBtmSheetWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(),
+        Container(height: 6),
         Expanded(
           child: ListView.builder(
             itemCount: 25,
