@@ -6,15 +6,17 @@ class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading: Padding(
-          padding: EdgeInsets.all(8),
-          child: Image.asset(AssetsManager.shoppingCart),
+    return GestureDetector(
+      child: Scaffold(
+        appBar: AppBar(
+          leading: Padding(
+            padding: EdgeInsets.all(8),
+            child: Image.asset(AssetsManager.shoppingCart),
+          ),
+          title: TitlesTextWidget(label: "Search Product"),
         ),
-        title: TitlesTextWidget(label: "Search Product"),
+        body: Column(children: [TextField()]),
       ),
-      body: Column(children: [TextField()]),
     );
   }
 }
