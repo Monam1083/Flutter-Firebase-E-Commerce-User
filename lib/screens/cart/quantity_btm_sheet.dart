@@ -8,16 +8,18 @@ class QuantityBtmSheetWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ListView.builder(
-          itemCount: 25,
-          itemBuilder: (context, index) {
-            return Center(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: SubtitleTextWidget(label: index.toString()),
-              ),
-            );
-          },
+        Expanded(
+          child: ListView.builder(
+            itemCount: 25,
+            itemBuilder: (context, index) {
+              return Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: SubtitleTextWidget(label: index.toString()),
+                ),
+              );
+            },
+          ),
         ),
       ],
     );
