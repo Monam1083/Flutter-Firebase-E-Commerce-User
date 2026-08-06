@@ -14,9 +14,7 @@ class SearchScreen extends StatelessWidget {
         ),
         title: TitlesTextWidget(label: "Search Product"),
       ),
-      body: Center(
-        child: TitlesTextWidget(label: "search", color: Colors.amber),
-      ),
+      body: 
     );
   }
 }
