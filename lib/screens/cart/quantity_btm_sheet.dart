@@ -7,6 +7,7 @@ class QuantityBtmSheetWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      itemCount: 25,
       itemBuilder: (context, index) {
         return SubtitleTextWidget(label: index.toString());
       },
