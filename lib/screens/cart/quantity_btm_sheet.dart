@@ -8,12 +8,15 @@ class QuantityBtmSheetWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
-          height: 6,
-          width: 50,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: Colors.grey,
+        SizedBox(
+          height: 20,
+          child: Container(
+            height: 6,
+            width: 50,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              color: Colors.grey,
+            ),
           ),
         ),
         Expanded(
