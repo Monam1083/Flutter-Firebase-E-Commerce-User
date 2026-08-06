@@ -7,7 +7,9 @@ class SearchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        FocusScope.of(context);
+      },
       child: Scaffold(
         appBar: AppBar(
           leading: Padding(
