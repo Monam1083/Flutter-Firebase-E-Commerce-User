@@ -12,6 +12,7 @@ class SearchScreen extends StatelessWidget {
           padding: EdgeInsets.all(8),
           child: Image.asset(AssetsManager.shoppingCart),
         ),
+        title: TitlesTextWidget(label: "Search Product"),
       ),
       body: Center(
         child: TitlesTextWidget(label: "search", color: Colors.amber),
