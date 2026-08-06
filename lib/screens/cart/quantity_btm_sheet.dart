@@ -9,8 +9,6 @@ class QuantityBtmSheetWidget extends StatelessWidget {
     return Column(
       children: [
         ListView.builder(
-          physics: NeverScrollableScrollPhysics(),
-          shrinkWrap: true,
           itemCount: 25,
           itemBuilder: (context, index) {
             return Center(
