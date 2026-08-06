@@ -1,6 +1,7 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:shop_user_application/screens/cart/quantity_btm_sheet.dart';
 import 'package:shop_user_application/widgets/subtitle_text.dart';
 import 'package:shop_user_application/widgets/title_text.dart';
 
@@ -63,7 +64,12 @@ class CartWidget extends StatelessWidget {
                         const Spacer(),
                         OutlinedButton.icon(
                           onPressed: () async {
-                            await showModalBottomSheet(context: context, builder: builder)
+                            await showModalBottomSheet(
+                              context: context,
+                              builder: (context) {
+                                return QuantityBtmSheetWidget();
+                              },
+                            );
                           },
                           icon: const Icon(IconlyLight.arrowDown2),
                           label: const Text("Qty: 6"),
