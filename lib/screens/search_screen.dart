@@ -14,7 +14,7 @@ class SearchScreen extends StatelessWidget {
         ),
         title: TitlesTextWidget(label: "Search Product"),
       ),
-      body: 
+      body: Column(children: []),
     );
   }
 }
