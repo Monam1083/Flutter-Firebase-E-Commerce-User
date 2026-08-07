@@ -23,6 +23,10 @@ class Style {
           color: isDarkTheme ? Colors.white : Colors.black,
         ),
       ),
+      inputDecorationTheme: InputDecorationTheme(
+          filled: true,
+          contentPadding: const EdgeInsets.all(10),
+          
     );
   }
 }
