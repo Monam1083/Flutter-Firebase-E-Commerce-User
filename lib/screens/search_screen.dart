@@ -24,7 +24,9 @@ class SearchScreen extends StatelessWidget {
             children: [
               TextField(
                 decoration: InputDecoration(
-                  enabledBorder: OutlineInputBorder(borderSide: BorderSide()),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(width: 2),
+                  ),
                 ),
               ),
             ],
