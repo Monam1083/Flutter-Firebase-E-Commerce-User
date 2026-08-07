@@ -24,36 +24,34 @@ class Style {
         ),
       ),
       inputDecorationTheme: InputDecorationTheme(
-          filled: true,
-          contentPadding: const EdgeInsets.all(10),
-          enabledBorder: OutlineInputBorder(
-            borderSide: const BorderSide(
-              width: 1,
-              color: Colors.transparent,
-            ),
-            borderRadius: BorderRadius.circular(12),
+        filled: true,
+        contentPadding: const EdgeInsets.all(10),
+        enabledBorder: OutlineInputBorder(
+          borderSide: const BorderSide(width: 1, color: Colors.transparent),
+          borderRadius: BorderRadius.circular(12),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+            width: 1,
+            color: isDarkTheme ? Colors.white : Colors.black,
           ),
-          focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(
-              width: 1,
-              color: isDarkTheme ? Colors.white : Colors.black,
-            ),
-            borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(12),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+            width: 1,
+            color: Theme.of(context).colorScheme.error,
           ),
-          errorBorder: OutlineInputBorder(
-            borderSide: BorderSide(
-              width: 1,
-              color: Theme.of(context).colorScheme.error,
-            ),
-            borderRadius: BorderRadius.circular(12.0),
+          borderRadius: BorderRadius.circular(12.0),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+            width: 1,
+            color: Theme.of(context).colorScheme.error,
           ),
-          focusedErrorBorder: OutlineInputBorder(
-            borderSide: BorderSide(
-              width: 1,
-              color: Theme.of(context).colorScheme.error,
-            ),
-            borderRadius: BorderRadius.circular(12.0),
-          ),
+          borderRadius: BorderRadius.circular(12.0),
+        ),
+      ),
     );
   }
 }
