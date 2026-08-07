@@ -35,7 +35,11 @@ class Style {
           ),
           focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(
-            
+              width: 1,
+              color: isDarkTheme ? Colors.white : Colors.black,
+            ),
+            borderRadius: BorderRadius.circular(12),
+          ),
     );
   }
 }
