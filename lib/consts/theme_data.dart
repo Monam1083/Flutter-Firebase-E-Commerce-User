@@ -40,6 +40,13 @@ class Style {
             ),
             borderRadius: BorderRadius.circular(12),
           ),
+          errorBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              width: 1,
+              color: Theme.of(context).colorScheme.error,
+            ),
+            borderRadius: BorderRadius.circular(12.0),
+          ),
     );
   }
 }
