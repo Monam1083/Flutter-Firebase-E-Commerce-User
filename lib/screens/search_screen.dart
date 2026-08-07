@@ -20,17 +20,7 @@ class SearchScreen extends StatelessWidget {
         ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Column(
-            children: [
-              TextField(
-                decoration: InputDecoration(
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(width: 2),
-                  ),
-                ),
-              ),
-            ],
-          ),
+          child: Column(children: [TextField()]),
         ),
       ),
     );
