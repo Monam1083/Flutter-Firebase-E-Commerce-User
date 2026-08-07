@@ -27,6 +27,7 @@ class Style {
           filled: true,
           contentPadding: const EdgeInsets.all(10),
           enabledBorder: OutlineInputBorder(
+            borderSide: const BorderSide(
            
     );
   }
