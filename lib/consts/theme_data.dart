@@ -47,6 +47,13 @@ class Style {
             ),
             borderRadius: BorderRadius.circular(12.0),
           ),
+          focusedErrorBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              width: 1,
+              color: Theme.of(context).colorScheme.error,
+            ),
+            borderRadius: BorderRadius.circular(12.0),
+          ),
     );
   }
 }
