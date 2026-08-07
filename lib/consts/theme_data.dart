@@ -28,7 +28,11 @@ class Style {
           contentPadding: const EdgeInsets.all(10),
           enabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(
-           
+              width: 1,
+              color: Colors.transparent,
+            ),
+            borderRadius: BorderRadius.circular(12),
+          ),
     );
   }
 }
