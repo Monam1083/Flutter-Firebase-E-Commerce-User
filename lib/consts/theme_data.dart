@@ -34,7 +34,8 @@ class Style {
             borderRadius: BorderRadius.circular(12),
           ),
           focusedBorder: OutlineInputBorder(
-           
+            borderSide: BorderSide(
+            
     );
   }
 }
