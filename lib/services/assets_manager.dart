@@ -11,7 +11,6 @@ class AssetsManager {
   static String error = "$imagesPath/error.png";
   static String addressMap = "$imagesPath/address_map.png";
   static String emptySearch = "$imagesPath/empty_search.png";
-
   static String successful = "$imagesPath/successful.png";
 
   // Profile
