@@ -9,7 +9,6 @@ class TitlesTextWidget extends StatelessWidget {
     this.color,
     this.maxLines,
   }) : super(key: key);
-
   final String label;
   final double fontSize;
   final Color? color;
