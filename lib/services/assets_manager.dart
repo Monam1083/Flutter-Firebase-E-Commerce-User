@@ -12,7 +12,6 @@ class AssetsManager {
   static String addressMap = "$imagesPath/address_map.png";
   static String emptySearch = "$imagesPath/empty_search.png";
   static String successful = "$imagesPath/successful.png";
-
   // Profile
   static String address = "$profileImagesPath/address.png";
   static String login = "$profileImagesPath/login.png";
